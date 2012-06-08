@@ -1,0 +1,11 @@
+---
+layout: post
+title: 测试blog文章
+category: test
+---
+
+p(date). 2011-04-22
+
+测试文种内容.
+
+h3. 测试文种内容

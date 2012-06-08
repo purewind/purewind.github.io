@@ -1,0 +1,13 @@
+---
+layout: post
+title: Maven常用命令
+category: maven
+---
+
+p(date). 2011-04-22
+
+Maven常用命令
+
+h3. mvn clean instal
+
+mvn dependency:copy-dependencies
