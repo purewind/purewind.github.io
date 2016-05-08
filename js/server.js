@@ -101,6 +101,6 @@ window.OZ = window.OZ || {};
 	that.parseData = parseData;
 	that.init = init;
 	that.initForm = initForm;
-	
+
 	OZ.server = that;
 })();

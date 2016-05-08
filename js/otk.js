@@ -49,7 +49,7 @@
             }
             return dom
         };
-        
+
         return that
     })();
      OTK.register("core.arr.isArray",
@@ -205,7 +205,7 @@
 		            };
 		            return that
 		        }
-		    });  
+		    });
     OTK.register("core.dom.removeNode",
     	    function($) {
     	        return function(node) {
@@ -215,7 +215,7 @@
     	            } catch(e) {}
     	        }
     	    });
-   
+
     OTK.register("core.json.jsonToStr",
     	    function($) {
     	        function f(n) {

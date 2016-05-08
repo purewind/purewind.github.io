@@ -10,7 +10,7 @@ window.OZ = window.OZ || {};
 		args = escape(args);
 		createIFM(method,args);
 	}
-	
+
 	function createIFM(sMethod, sArgs, sCallBackIndex) {
 	    var url = OTK.core.util.URL(DEFAULT_OZ_PROXY_PATH.replace(/\{domain\}/ig,ozDomain));
 	    url.setParam("method", sMethod);
@@ -29,7 +29,7 @@ window.OZ = window.OZ || {};
 	    document.body.appendChild(ifm);
 	    return ifm
 	}
-	
+
 	//解析传过来的参数
 	//source	==>	3rd_proxy?method=save&args={}&cb_index=x;
 	//调用method,并传入参数过去
@@ -44,14 +44,14 @@ window.OZ = window.OZ || {};
 		ozDomain = oJson.domain||DEFAULT_OZ_DOMAIN;
 
 		var oArgs = OTK.core.json.strToJson(unescape(sArgs));
-		 
+
 		if(window[sMethod]){
 			window[sMethod](oArgs);
 		}else{
 			alert("未定义指定方法:"+sMethod)
 		}
 	}
-	
+
 	//只是代理操作,把传递的参数送到目标执行
 	function initClientProxy() {
 	    var location_split = window.location.toString().split("?");
@@ -62,7 +62,7 @@ window.OZ = window.OZ || {};
 	        parent.clientWeb.OZ.client.parseData(location_split[1]);
 	    } catch(e) {alert(e)}
 	}
-	
+
 	var that = {};
 	that.callOzMethod = callOzMethod;
 	that.parseData = parseData;
